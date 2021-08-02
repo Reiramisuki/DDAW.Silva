@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>ClienteBaja</servlet-name>
+        <servlet-class>ar.org.centro8.curso.java.web.services.ClienteBaja</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ClienteLikeApellido</servlet-name>
+        <servlet-class>ar.org.centro8.curso.java.web.services.ClienteLikeApellido</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ClienteAlta</servlet-name>
+        <servlet-class>ar.org.centro8.curso.java.web.services.ClienteAlta</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ClienteAll</servlet-name>
+        <servlet-class>ar.org.centro8.curso.java.web.services.ClienteAll</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ClienteBaja</servlet-name>
+        <url-pattern>/ClienteBaja</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ClienteLikeApellido</servlet-name>
+        <url-pattern>/ClienteLikeApellido</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ClienteAlta</servlet-name>
+        <url-pattern>/ClienteAlta</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ClienteAll</servlet-name>
+        <url-pattern>/ClienteAll</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

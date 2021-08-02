@@ -1,0 +1,149 @@
+.buscar { grid-area: buscar; }
+.ingresar { grid-area: ingresar; }
+.tabla { grid-area: tabla; }
+.salida { grid-area: salida; }
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        'buscar buscar buscar buscar buscar buscar'
+        'ingresar tabla tabla tabla tabla tabla'
+        'salida tabla tabla tabla tabla tabla';}
+
+input[type=reset],
+input[type=submit],
+input[type=buscar]{
+    width: 170px;
+    height: 40px;
+    color:#f36200;
+    -webkit-text-stroke: 0.2px #000000;
+    font-size: 20px;
+    font-weight: bolder;
+    background:#fff100c2;}
+
+input{
+    width: 160px;
+    height: 20px;
+    color: #000000;
+    -webkit-text-stroke: 0px #000000;}
+
+input[type=reset]:hover,
+input[type=submit]:hover{color: #ff26b5;}
+
+#registros th {
+    align-content: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    border-color:#ffcc00;
+    color:#000000;}
+
+.buscar{
+    background-color:#ffffff00;
+    color:#000000;
+    font-weight: bolder;
+    font-style: inherit;
+    margin: auto;
+    text-align: left;}
+
+.buscar .label{
+    width: 260px;}
+
+.ingresar td{
+    /*color: #fff100;*/
+    color:black;
+    font-weight: bolder;
+    font-style: inherit;
+    /*-webkit-text-stroke: 1.3px #000000;*/
+    -webkit-text-stroke:1.2px #ffe000;
+    text-align: left;
+    font-size: 26px;}
+
+.ingresar{
+    background-color: #ffffff00;
+    padding-left:10px;
+    padding-right: 1px;
+    color:black;
+    -webkit-text-stroke: 0px #000000;
+    border: 2px;
+    margin: auto;
+    margin-top: 4px;}
+
+#busqueda td{
+    text-align: left;
+    font-size: 26px;
+    -webkit-text-stroke: 1.2px #ffff00;
+    color: #000000;}
+
+.tabla {
+    background: #ffcc33;
+    color: #000000;
+    overflow:  auto;
+    max-height: 590px;
+    max-width: 3500px;
+    border: #000000;
+    font-size: x-small;
+    width: fit-content;}
+
+.tabla tr:nth-child(even){
+    background-color: #ff9933;}
+
+.tabla tr:hover {
+    background-color:#ffff66;}
+
+body{
+    /*background: url('fondo lunares n2.jpg');*/
+    background: url('fondo otono.jpg');}
+
+h1{
+    color: #ff26b5;
+    text-align: center;
+    font-size: xxx-large;
+    font-style: normal;
+    margin-block-end: auto;
+    margin-top: auto;
+    -webkit-text-stroke: 1.5px #000000;}
+
+h2{
+    color:black;
+    text-align: center;
+    font-size: medium;
+    font-style: normal;}
+
+td{
+    display: table-cell;
+    vertical-align: inherit;
+    -webkit-text-stroke: 0.3px #000000;}
+
+h3 {
+    margin-top: 3px;
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    -webkit-text-stroke: 1.5px #000000;
+    color: orange;}
+
+.salida{
+    background-color: #ffcc00a8;
+    color: #000000;
+    text-align: center;
+    font-size: 21px;
+    border-style: dashed;
+    width: max-content;
+    margin-left: 40px;}
+
+select{
+    height: 30px;
+    color: #000000 ;
+    width: 170px;
+    -webkit-text-stroke: 0px #000000;}
+
+table{
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-align: center;
+    border-spacing: 2px;}
+
+option{
+    width: 125px;
+    color:#0b073d;}
